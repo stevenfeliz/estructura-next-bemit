@@ -1,0 +1,48 @@
+.grid{
+    display: grid;
+    gap: 2rem;
+    margin-bottom:2rem ;
+}
+
+.card{
+    background-color: bisque;
+}
+
+
+@include sm{
+    @for $i from 1 through $columns {
+        .col-sm-#{$i} {
+          grid-template-columns: repeat(#{$i}, 1fr);
+        }
+        .span-sm-#{$i} {
+          grid-column: span #{$i};
+        }
+      }
+
+}
+
+
+
+@include md{
+    @for $i from 1 through $columns {
+        .col-md-#{$i} {
+          grid-template-columns: repeat(#{$i}, 1fr);
+        }
+        .span-md-#{$i} {
+          grid-column: span #{$i};
+        }
+      }
+
+}
+
+@include lg{
+    @for $i from 1 through $columns {
+        .col-lg-#{$i} {
+          grid-template-columns: repeat(#{$i}, 1fr);
+        }
+        .span-lg-#{$i} {
+          grid-column: span #{$i};
+        }
+      }
+
+}

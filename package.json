@@ -13,8 +13,10 @@
     "@types/react": "18.2.13",
     "@types/react-dom": "18.2.6",
     "next": "13.4.7",
+    "normalize.css": "^8.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "sass": "^1.63.6",
     "typescript": "5.1.3"
   }
 }

@@ -1,0 +1,21 @@
+@mixin sm {
+    @media (max-width: ($md - 1)) {
+      // Estilos para dispositivos móviles
+      @content;
+    }
+  }
+  
+  @mixin md {
+    @media (min-width: $md) and (max-width: ($lg - 1)) {
+      // Estilos para tablets
+      @content;
+    }
+  }
+  
+  @mixin lg {
+    @media (min-width: $lg) {
+      // Estilos para pantallas de escritorio
+      @content;
+    }
+  }
+  
